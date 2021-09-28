@@ -36,6 +36,11 @@ public class Jugador extends Combatiente{
             msg_victoria="El gremio me dara una gran recompensa!";
         }
     }
+    
+    /** 
+     * @param i=0;i<items.size();i++
+     * @return String
+     */
     public String get_items(){//desplegar lista de items
         String list_items="\n";
         for(int i=0;i<items.size();i++){
@@ -43,24 +48,54 @@ public class Jugador extends Combatiente{
         }
         return list_items;
     }
+    
+    /** 
+     * @return int
+     */
     public int cantidad_items(){
         return items.size();
     }
+    
+    /** 
+     * @param index
+     * @return String
+     */
     public String getItem(int index){
         return items.get(index);
     }
+    
+    /** 
+     * @param index
+     */
     public void eliminar_item(int index){
         items.remove(index);
     }
+    
+    /** 
+     * @param index
+     */
     public void eliminar_habilidad(int index){
 
     }
+    
+    /** 
+     * @param index
+     * @return String
+     */
     public String getHabilidad(int index){
         return "";
     }
+    
+    /** 
+     * @return String
+     */
     public String get_habilidades(){
         return "";
     }
+    
+    /** 
+     * @return int
+     */
     public int cantidad_habilidades(){
         return 0;
     }

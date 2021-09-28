@@ -20,30 +20,66 @@ public abstract class Combatiente {
         msg_muerte="";
         msg_victoria="";
     }
+    
+    /** 
+     * @return String
+     */
     public String getNombre() {
         return nombre;
     }
+    
+    /** 
+     * @return int
+     */
     public int getVida(){
         return vida;
     }
+    
+    /** 
+     * @return int
+     */
     public int getAtq(){
         return atq;
     }
+    
+    /** 
+     * @param cant
+     */
     public void dismunuir_vida(int cant){
         vida=vida-cant;
     }
+    
+    /** 
+     * @return String
+     */
     public String getMsgInicio(){
         return msg_inicio;
     }
+    
+    /** 
+     * @return String
+     */
     public String getMsgMuerte(){
         return msg_muerte;
     }
+    
+    /** 
+     * @return String
+     */
     public String getMsgVictoria(){
         return msg_victoria;
     }
+    
+    /** 
+     * @param a
+     */
     public void aumentar_atq(int a){
         atq=atq+a;
     }
+    
+    /** 
+     * @param a
+     */
     public void aumentar_vida(int a){
         vida=vida+a;
     }

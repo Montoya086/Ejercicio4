@@ -36,24 +36,55 @@ public class Enemigo extends Combatiente{
             msg_victoria="Tan fragiles como pense";
         }
     }
+    
+    /** 
+     * @return String
+     */
     public String get_items(){
         return "";
     }
+    
+    /** 
+     * @return int
+     */
     public int cantidad_items(){
         return 0;
     }
+    
+    /** 
+     * @param index
+     * @return String
+     */
     public String getItem(int index){
         return "";
     }
+    
+    /** 
+     * @param index
+     */
     public void eliminar_item(int index){
 
     }
+    
+    /** 
+     * @param index
+     */
     public void eliminar_habilidad(int index){
         habilidad.remove(index);
     }
+    
+    /** 
+     * @param index
+     * @return String
+     */
     public String getHabilidad(int index){
         return habilidad.get(index);
     }
+    
+    /** 
+     * @param i=0;i<habilidad.size();i++
+     * @return String
+     */
     public String get_habilidades(){//desplegar lista de habilidades
         String list_items="\n";
         for(int i=0;i<habilidad.size();i++){
@@ -61,6 +92,10 @@ public class Enemigo extends Combatiente{
         }
         return list_items;
     }
+    
+    /** 
+     * @return int
+     */
     public int cantidad_habilidades(){
         return habilidad.size();
     }

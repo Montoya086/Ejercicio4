@@ -6,6 +6,10 @@ Creación: 24/09/2021
 Modificacion: 27/09/2021
 */
 public class Controlador {
+    
+    /** 
+     * @param args
+     */
     public static void main(String[] args){
         Vista v = new Vista();
         String nombre="";

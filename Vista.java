@@ -8,6 +8,10 @@ Modificacion: 27/09/2021
 import java.util.Scanner;
 public class Vista {
     Scanner sc = new Scanner(System.in);
+    
+    /** 
+     * @return String
+     */
     public String ingreso_nombre(){//ingresar el nombre
         try{
             System.out.println("Ingrese el nombre de su heroe:");
@@ -16,6 +20,10 @@ public class Vista {
             return "";
         }
     }
+    
+    /** 
+     * @return int
+     */
     public int seleccion_clase(){//seleccion de clases
         try{
             System.out.println("Ingrese la clase de su jugador");
@@ -26,10 +34,19 @@ public class Vista {
             return 0;
         }
     }
+    
+    /** 
+     * @param lista
+     */
     public void mostrar_combatientes(String lista){//mostrar lista de combatientes
         System.out.println("Combatientes:");
         System.out.println(lista);
     }
+    
+    /** 
+     * @param lista
+     * @return int
+     */
     public int elegir_objetivo(String lista){//elegir objetivo
         try{
             System.out.println("Combatientes:");
@@ -39,15 +56,32 @@ public class Vista {
             return -1;
         }
     }
+    
+    /** 
+     * @param lista
+     */
     public void objetivo(){// mensaje de elegir objetivo
         System.out.println("Elige tu objetivo:");
     }
+    
+    /** 
+     * @param lista
+     */
     public void item(){// mensaje de elegir item
         System.out.println("Elige tu item:");
     }
+    
+    /** 
+     * @param lista
+     */
     public void habilidad(){// mesnaje de elegir habilidad
         System.out.println("Elige tu habilidad:");
     }
+    
+    /** 
+     * @param lista
+     * @return int
+     */
     public int elegir_item(String lista){//elegir item
         try{
             System.out.println(lista);
@@ -56,6 +90,11 @@ public class Vista {
             return -1;
         }
     }
+    
+    /** 
+     * @param lista
+     * @return int
+     */
     public int elegir_habilidad(String lista){//elegir habilidad
         try{
             System.out.println(lista);
@@ -64,6 +103,10 @@ public class Vista {
             return -1;
         }
     }
+    
+    /** 
+     * @return int
+     */
     public int menu_jugador(){//menu del jugador
         try{
             System.out.println("Ingrese la opcion a ejectuar:");
@@ -76,6 +119,10 @@ public class Vista {
         }
         
     }
+    
+    /** 
+     * @return int
+     */
     public int menu_enemigo(){//menu de los enemigos
         try{
             System.out.println("Ingrese la opcion a ejectuar:");

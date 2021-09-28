@@ -40,9 +40,19 @@ public class Juego {
             }
         }
     }
+    
+    /** 
+     * @param atacante
+     * @param index)if(combatientes.get(index).getVida()<=0
+     */
     public void atacar(int atacante, int objetivo){//atacar
         combatientes.get(objetivo).dismunuir_vida(combatientes.get(atacante).getAtq());
     }
+    
+    /** 
+     * @param index)if(combatientes.get(index).getVida()<=0
+     * @return boolean
+     */
     public boolean verificar_vivo(int index){//verificar si un combatiente está vivo
         if(combatientes.get(index).getVida()<=0){
             return false;
@@ -50,9 +60,18 @@ public class Juego {
             return true;
         }
     }
+    
+    /** 
+     * @param i=0;i<combatientes.size();i++
+     */
     public void eliminar_combatiente(int index){//eliminar combatiente
         combatientes.remove(index);
     }
+    
+    /** 
+     * @param i=0;i<combatientes.size();i++
+     * @return String
+     */
     public String mostrar_combatientes(){//mostrar lista de combatientes
         String lista="\n";
         for(int i=0;i<combatientes.size();i++){
@@ -60,21 +79,51 @@ public class Juego {
         }
         return lista;
     }
+    
+    /** 
+     * @param nombre)if(combatientes.size()==1
+     * @return int
+     */
     public int ncombatientes(){//mostrar cantidad de combatientes
         return combatientes.size();
     }
+    
+    /** 
+     * @param nombre)if(combatientes.size()==1
+     * @return String
+     */
     public String getNombre(int index){//mostrar nombre del combatiente
         return combatientes.get(index).getNombre();
     }
+    
+    /** 
+     * @param nombre)if(combatientes.size()==1
+     * @return String
+     */
     public String getMsgInicio(int index){//mostrar mensaje de inicio de un combatiente
         return combatientes.get(index).getMsgInicio();
     }
+    
+    /** 
+     * @param nombre)if(combatientes.size()==1
+     * @return String
+     */
     public String getMsgMuerte(int index){//mostrar mensaje de muerte de un combatiente
         return combatientes.get(index).getMsgMuerte();
     }
+    
+    /** 
+     * @param nombre)if(combatientes.size()==1
+     * @return String
+     */
     public String getMsgVictoria(int index){//mostrar mensaje de victoria de un combatiente
         return combatientes.get(index).getMsgVictoria();
     }
+    
+    /** 
+     * @param nombre)if(combatientes.size()==1
+     * @return boolean
+     */
     public boolean verificar_win(String nombre){//verificar si el jugador ganó
         if(combatientes.size()==1){
             if(combatientes.get(0).getNombre()==nombre){
@@ -86,6 +135,11 @@ public class Juego {
             return false;
         }
     }
+    
+    /** 
+     * @param nombre)if(combatientes.get(0).getNombre()!=nombre
+     * @return boolean
+     */
     public boolean verificar_derrota(String nombre){//verificar derrota
         if(combatientes.get(0).getNombre()!=nombre){
             return true;
