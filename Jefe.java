@@ -1,3 +1,10 @@
+/*
+Nombre: Andrés Estuardo Montoya Wilhelm
+Programa: Jefe.java
+Lenguaje: Java
+Creación: 24/09/2021
+Modificacion: 27/09/2021
+*/
 public class Jefe extends Enemigo{
     public Jefe(String nombre){
         super(nombre);

@@ -1,5 +1,11 @@
+/*
+Nombre: Andrés Estuardo Montoya Wilhelm
+Programa: Jugador.java
+Lenguaje: Java
+Creación: 24/09/2021
+Modificacion: 27/09/2021
+*/
 import java.util.ArrayList;
-
 public class Jugador extends Combatiente{
     String clase;
     ArrayList<String> items;
@@ -30,7 +36,7 @@ public class Jugador extends Combatiente{
             msg_victoria="El gremio me dara una gran recompensa!";
         }
     }
-    public String get_items(){
+    public String get_items(){//desplegar lista de items
         String list_items="\n";
         for(int i=0;i<items.size();i++){
             list_items=list_items+i+". "+items.get(i)+"\n";

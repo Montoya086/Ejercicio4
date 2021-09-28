@@ -1,3 +1,10 @@
+/*
+Nombre: Andrés Estuardo Montoya Wilhelm
+Programa: Vista.java
+Lenguaje: Java
+Creación: 24/09/2021
+Modificacion: 27/09/2021
+*/
 import java.util.Scanner;
 public class Vista {
     Scanner sc = new Scanner(System.in);

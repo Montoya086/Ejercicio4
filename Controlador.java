@@ -1,3 +1,10 @@
+/*
+Nombre: Andrés Estuardo Montoya Wilhelm
+Programa: Controlador.java
+Lenguaje: Java
+Creación: 24/09/2021
+Modificacion: 27/09/2021
+*/
 public class Controlador {
     public static void main(String[] args){
         Vista v = new Vista();

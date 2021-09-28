@@ -1,3 +1,10 @@
+/*
+Nombre: Andrés Estuardo Montoya Wilhelm
+Programa: Enemigo.java
+Lenguaje: Java
+Creación: 24/09/2021
+Modificacion: 27/09/2021
+*/
 import java.util.ArrayList;
 public class Enemigo extends Combatiente{
     protected ArrayList<String> habilidad;
@@ -47,7 +54,7 @@ public class Enemigo extends Combatiente{
     public String getHabilidad(int index){
         return habilidad.get(index);
     }
-    public String get_habilidades(){
+    public String get_habilidades(){//desplegar lista de habilidades
         String list_items="\n";
         for(int i=0;i<habilidad.size();i++){
             list_items=list_items+i+". "+habilidad.get(i)+"\n";
