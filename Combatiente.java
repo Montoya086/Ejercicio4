@@ -45,7 +45,7 @@ public abstract class Combatiente {
     /** 
      * @param cant
      */
-    public void dismunuir_vida(int cant){
+    public void disminuir_vida(int cant){
         vida=vida-cant;
     }
     

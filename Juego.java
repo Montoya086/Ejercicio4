@@ -46,7 +46,7 @@ public class Juego {
      * @param index)if(combatientes.get(index).getVida()<=0
      */
     public void atacar(int atacante, int objetivo){//atacar
-        combatientes.get(objetivo).dismunuir_vida(combatientes.get(atacante).getAtq());
+        combatientes.get(objetivo).disminuir_vida(combatientes.get(atacante).getAtq());
     }
     
     /** 
@@ -163,7 +163,8 @@ public class Juego {
         String nombre_item = combatientes.get(portador).getItem(item);//devolver el nombre del item
         switch (nombre_item) {//items:
             case "Filo de la noche":
-                combatientes.get(objetivo).dismunuir_vida(combatientes.get(portador).getAtq()+100);
+                int vida_disminuida=combatientes.get(portador).getAtq()+100;
+                combatientes.get(objetivo).disminuir_vida(vida_disminuida);
                 combatientes.get(portador).eliminar_item(item);
                 break;
             case "Posion de fuerza":
@@ -175,7 +176,7 @@ public class Juego {
                 combatientes.get(portador).eliminar_item(item);
                 break;
             case "Varita de rayo":
-                combatientes.get(objetivo).dismunuir_vida(150);
+                combatientes.get(objetivo).disminuir_vida(150);
                 combatientes.get(portador).eliminar_item(item);
                 break;
             default:
@@ -186,7 +187,7 @@ public class Juego {
         String nombre_habilidad = combatientes.get(portador).getHabilidad(habilidad);//buscar el nombre de la habilidad
         switch (nombre_habilidad) {//habilidades normales:
             case "Veneno":
-                combatientes.get(objetivo).dismunuir_vida(80);
+                combatientes.get(objetivo).disminuir_vida(80);
                 break;
             case "Fuerza":
                 combatientes.get(objetivo).aumentar_atq(25);
@@ -195,7 +196,7 @@ public class Juego {
                 combatientes.get(objetivo).aumentar_vida(50);
                 break;//habilidades de jefe: (1 uso)
             case "Veneno refinado":
-                combatientes.get(objetivo).dismunuir_vida(160);
+                combatientes.get(objetivo).disminuir_vida(160);
                 combatientes.get(portador).eliminar_habilidad(habilidad);
                 break;
             case "Fuerza de la muerte":
