@@ -83,12 +83,8 @@ public abstract class Combatiente {
     public void aumentar_vida(int a){
         vida=vida+a;
     }
-    abstract String get_items();
-    abstract int cantidad_items();
     abstract String get_habilidades();
     abstract int cantidad_habilidades();
-    abstract String getItem(int index);
-    abstract void eliminar_item(int index);
     abstract String getHabilidad(int index);
     abstract void eliminar_habilidad(int index);
 }

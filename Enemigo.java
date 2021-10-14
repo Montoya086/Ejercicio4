@@ -38,35 +38,6 @@ public class Enemigo extends Combatiente{
     }
     
     /** 
-     * @return String
-     */
-    public String get_items(){
-        return "";
-    }
-    
-    /** 
-     * @return int
-     */
-    public int cantidad_items(){
-        return 0;
-    }
-    
-    /** 
-     * @param index
-     * @return String
-     */
-    public String getItem(int index){
-        return "";
-    }
-    
-    /** 
-     * @param index
-     */
-    public void eliminar_item(int index){
-
-    }
-    
-    /** 
      * @param index
      */
     public void eliminar_habilidad(int index){

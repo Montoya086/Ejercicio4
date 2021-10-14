@@ -148,10 +148,10 @@ public class Juego {
         }
     }
     public String mostrar_items(){//mostrar items
-        return combatientes.get(0).get_items();
+        return combatientes.get(0).get_habilidades();
     }
     public int numero_items(){//mostrar numero de items
-        return combatientes.get(0).cantidad_items();
+        return combatientes.get(0).cantidad_habilidades();
     }
     public String mostrar_habilidades(int index){//mostrar habilidades
         return combatientes.get(index).get_habilidades();
@@ -160,24 +160,24 @@ public class Juego {
         return combatientes.get(index).cantidad_habilidades();
     }
     public void usar_item(int portador, int item, int objetivo){//utilizar item
-        String nombre_item = combatientes.get(portador).getItem(item);//devolver el nombre del item
+        String nombre_item = combatientes.get(portador).getHabilidad(item);//devolver el nombre del item
         switch (nombre_item) {//items:
             case "Filo de la noche":
                 int vida_disminuida=combatientes.get(portador).getAtq()+100;
                 combatientes.get(objetivo).disminuir_vida(vida_disminuida);
-                combatientes.get(portador).eliminar_item(item);
+                combatientes.get(portador).eliminar_habilidad(item);
                 break;
             case "Posion de fuerza":
                 combatientes.get(objetivo).aumentar_atq(50);
-                combatientes.get(portador).eliminar_item(item);
+                combatientes.get(portador).eliminar_habilidad(item);
                 break;
             case "Varita de vida":
                 combatientes.get(objetivo).aumentar_vida(150);
-                combatientes.get(portador).eliminar_item(item);
+                combatientes.get(portador).eliminar_habilidad(item);
                 break;
             case "Varita de rayo":
                 combatientes.get(objetivo).disminuir_vida(150);
-                combatientes.get(portador).eliminar_item(item);
+                combatientes.get(portador).eliminar_habilidad(item);
                 break;
             default:
                 break;

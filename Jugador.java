@@ -41,7 +41,7 @@ public class Jugador extends Combatiente{
      * @param i=0;i<items.size();i++
      * @return String
      */
-    public String get_items(){//desplegar lista de items
+    public String get_habilidades(){//desplegar lista de items
         String list_items="\n";
         for(int i=0;i<items.size();i++){
             list_items=list_items+i+". "+items.get(i)+"\n";
@@ -52,7 +52,7 @@ public class Jugador extends Combatiente{
     /** 
      * @return int
      */
-    public int cantidad_items(){
+    public int cantidad_habilidades(){
         return items.size();
     }
     
@@ -60,43 +60,14 @@ public class Jugador extends Combatiente{
      * @param index
      * @return String
      */
-    public String getItem(int index){
+    public String getHabilidad(int index){
         return items.get(index);
     }
     
     /** 
      * @param index
      */
-    public void eliminar_item(int index){
-        items.remove(index);
-    }
-    
-    /** 
-     * @param index
-     */
     public void eliminar_habilidad(int index){
-
-    }
-    
-    /** 
-     * @param index
-     * @return String
-     */
-    public String getHabilidad(int index){
-        return "";
-    }
-    
-    /** 
-     * @return String
-     */
-    public String get_habilidades(){
-        return "";
-    }
-    
-    /** 
-     * @return int
-     */
-    public int cantidad_habilidades(){
-        return 0;
+        items.remove(index);
     }
 }
